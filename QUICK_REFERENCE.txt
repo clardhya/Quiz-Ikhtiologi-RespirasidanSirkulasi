@@ -1,0 +1,235 @@
+================================================================================
+                    ICHTHYOLOGY QUIZ - QUICK REFERENCE
+================================================================================
+
+PROJECT: Interactive Quiz Web Application
+SUBJECT: Ichthyology - Circulation and Respiration
+TOTAL QUESTIONS: 18
+FORMAT: Short Answer (Uraian Singkat)
+
+================================================================================
+GETTING STARTED (3 COMMANDS)
+================================================================================
+
+1. Navigate to project:
+   cd "d:\Project Coding\Quiz Ikhtiologi\Respirasi dan Sirkulasi\Quiz-Ikhtiologi-RespirasidanSirkulasi"
+
+2. Install dependencies:
+   npm install
+
+3. Start development server:
+   npm run dev
+
+Then open: http://localhost:3000
+
+WINDOWS USERS: Double-click QUICK_START.bat, then RUN_DEV.bat
+
+================================================================================
+FILE STRUCTURE
+================================================================================
+
+app/
+  ├── page.tsx           ← Main quiz application
+  ├── layout.tsx         ← HTML layout & metadata
+  └── globals.css        ← Global styles
+
+components/
+  ├── Header.tsx         ← Top header
+  ├── QuestionCard.tsx   ← Question display
+  ├── QuizControls.tsx   ← Navigation buttons
+  ├── QuestionNavigator.tsx  ← Question grid (1-18)
+  └── ResultsPage.tsx    ← Results & review
+
+lib/
+  ├── quizData.ts        ← All 18 questions
+  └── utils.ts           ← Grading logic
+
+================================================================================
+KEY FEATURES
+================================================================================
+
+✓ 18 ichthyology questions with explanations
+✓ Navigation grid to jump to any question
+✓ Visual progress tracking (green/gray/cyan indicators)
+✓ Case-insensitive answer matching
+✓ Automatic scoring
+✓ Detailed results page with review
+✓ Responsive design (mobile/tablet/desktop)
+✓ Dark aquatic theme
+✓ No time limits
+✓ Retake functionality
+
+================================================================================
+HOW TO USE
+================================================================================
+
+1. ANSWER QUESTIONS
+   - Type your answer in the text field
+   - Answers auto-save as you type
+   - Character count shown below field
+
+2. NAVIGATE
+   - Click any number in the left grid to jump
+   - Use Previous/Next buttons to navigate sequentially
+   - Current question highlighted in cyan
+
+3. TRACK PROGRESS
+   - Green = Answered
+   - Gray = Unanswered
+   - Cyan = Currently viewing
+
+4. SUBMIT
+   - Click "Submit Quiz" button (available anytime)
+   - Goes to results page
+
+5. REVIEW RESULTS
+   - See total score and percentage
+   - Review all questions with answers
+   - View explanations (Pembahasan)
+   - Click "Retake Quiz" to start over
+
+================================================================================
+ANSWER MATCHING
+================================================================================
+
+Answers are:
+- Case-insensitive (RESPIRASI = respirasi = Respirasi)
+- Whitespace trimmed ("  respirasi  " = "respirasi")
+- Support multiple variations (see quizData.ts)
+
+Example from Q1:
+  Accepted: "respirasi", "proses respirasi"
+  All match: "RESPIRASI", "  respirasi  ", "Proses Respirasi", etc.
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+"npm: command not found"
+  → Install Node.js from https://nodejs.org/
+  → Verify: node --version
+
+"Port 3000 already in use"
+  → npm run dev -- -p 3001
+
+"Module not found" errors
+  → rm -r node_modules package-lock.json
+  → npm install
+
+PowerShell execution policy error
+  → Use Command Prompt (cmd) instead
+  → Or use QUICK_START.bat script
+
+Changes not showing
+  → Hard refresh: Ctrl+F5 (Windows) or Cmd+Shift+R (Mac)
+
+================================================================================
+COMMANDS
+================================================================================
+
+npm run dev       → Start development server (port 3000)
+npm run build     → Build for production
+npm start         → Run production build (after npm build)
+npm run lint      → Check code for issues
+
+================================================================================
+PROJECT STATISTICS
+================================================================================
+
+Total Files: 21
+React Components: 5
+TypeScript Files: 8
+Configuration Files: 6
+Documentation Files: 5
+Lines of Code: 1,500+
+Supported Browsers: Chrome, Firefox, Safari, Edge
+
+================================================================================
+CUSTOMIZATION
+================================================================================
+
+Add/Edit Questions:
+  → Edit lib/quizData.ts
+  → Modify QUIZ_QUESTIONS array
+  → Change question text, correct answers, explanations
+
+Change Theme:
+  → Edit tailwind.config.ts
+  → Modify component Tailwind classes
+
+Change Layout:
+  → Edit component files
+  → Adjust grid columns, button placement, etc.
+
+================================================================================
+DEPLOYMENT
+================================================================================
+
+Build for Production:
+  npm run build
+  npm start
+
+Deploy to Services:
+  - Vercel (recommended)
+  - Netlify
+  - AWS Amplify
+  - Google Cloud
+  - Any Node.js hosting
+
+================================================================================
+DOCUMENTATION
+================================================================================
+
+README.md                    → Full project overview
+GETTING_STARTED.md          → Step-by-step guide
+SETUP.md                    → Installation help & troubleshooting
+PROJECT_STRUCTURE.md        → File architecture & components
+IMPLEMENTATION_CHECKLIST.md → Complete feature list
+
+================================================================================
+TECH STACK
+================================================================================
+
+Next.js 14          → React framework with App Router
+React 18.2          → UI library
+TypeScript 5.3      → Type safety
+Tailwind CSS 3.3    → Responsive styling
+Lucide React 0.294  → Icons
+Framer Motion 10.16 → Animations
+
+================================================================================
+BROWSER SUPPORT
+================================================================================
+
+✓ Chrome 90+
+✓ Firefox 88+
+✓ Safari 15+
+✓ Edge 90+
+✓ Mobile browsers
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+1. Run: npm install
+2. Run: npm run dev
+3. Open: http://localhost:3000
+4. Take the quiz!
+5. Review results
+6. Test all features
+7. Customize if needed
+8. Deploy when ready
+
+================================================================================
+QUICK HELP
+================================================================================
+
+All documentation is in the project root directory.
+Questions? Check the markdown files:
+  - GETTING_STARTED.md for quick help
+  - PROJECT_STRUCTURE.md to understand architecture
+  - SETUP.md for installation issues
+
+Good luck! 🐟📚
+
+================================================================================
