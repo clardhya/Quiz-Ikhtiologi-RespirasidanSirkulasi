@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { QUIZ_QUESTIONS } from '@/lib/quizData'
 import { calculateScore } from '@/lib/utils'
 import { Header } from '@/components/Header'
